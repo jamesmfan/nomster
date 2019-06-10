@@ -70,3 +70,4 @@ end
 gem 'kaminari'
 gem 'bootstrap-kaminari-views'
 gem 'simple_form'
+gem "font-awesome-rails"
