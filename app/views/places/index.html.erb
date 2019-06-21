@@ -19,8 +19,15 @@
       </blockquote>
     </div>
     <% end %>
+
+   <div class="booyah-box">
+    <blockquote>
+      <b><%= image_tag place.photos.last.picture.to_s %></b>
+      <b><%= place.photos.last.caption %></b> 
+      <small><%= place.photos.last.user.email %></small>
+    </blockquote>
   </div>
 
-
+</div>
 <% end %>
 
