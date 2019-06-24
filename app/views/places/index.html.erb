@@ -20,12 +20,16 @@
     </div>
     <% end %>
 
-   <div class="booyah-box">
-    <blockquote>
-      <b><%= image_tag place.photos.last.picture.to_s %></b>
+<% if place.photos.present? %>
+<div class="booyah-box">
+    
+   <blockquote>                        
+      <%= image_tag place.photos.first.picture.url, class: 'index-image-size' %>
+      
       <b><%= place.photos.last.caption %></b> 
       <small><%= place.photos.last.user.email %></small>
-    </blockquote>
+   </blockquote>
+<% end %>
   </div>
 
 </div>
