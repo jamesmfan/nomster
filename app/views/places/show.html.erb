@@ -34,6 +34,9 @@
 <br />
 
   <div class="float-right">
+    <button type="button" class="btn btn-primary btn-primary" data-toggle="modal" data-target="#myModalcomment">
+  Add a comment
+</button>
     <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
   Upload a photo
@@ -81,7 +84,7 @@
 <div class="clear"></div>
 
 <!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade" id="myModalcomment" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -96,8 +99,9 @@
           <%= f.input :rating, as: :select, collection: Comment::RATINGS %>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
           <%= f.submit "Add a Comment", class: 'btn btn-primary' %>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          
         </div>
       <% end %>
     </div>
@@ -108,9 +112,7 @@
 <div class="col-10 offset-1"
 <h1 class="float-left">Comments</h1>
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-  Add a comment
-</button>
+
 </div>
 
 <div class="clear"></div>
