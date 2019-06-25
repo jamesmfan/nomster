@@ -34,11 +34,11 @@
 <br />
 
   <div class="float-right">
-    <button type="button" class="btn btn-primary btn-primary" data-toggle="modal" data-target="#myModalcomment">
+    <button type="button" class="btn btn-primary custom-btn" data-toggle="modal" data-target="#myModalcomment">
   Add a comment
 </button>
     <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+<button type="button" class="btn btn-primary custom-btn" data-toggle="modal" data-target="#myModal">
   Upload a photo
 </button>
 
@@ -70,7 +70,7 @@
   </div>
 </div>
     <% if current_user && current_user == @place.user %>
-      <%= link_to 'Edit', edit_place_path(@place), class: 'btn btn-primary' %>
+      <%= link_to 'Edit', edit_place_path(@place), class: 'btn btn-primary custom-btn' %>
       <%= link_to 'Remove', place_path(@place), method: :delete, data: {confirm: 'Are you sure you want to delete this place?'},class: 'btn btn-danger' %>
     <% end %>
   </div>
@@ -110,13 +110,12 @@
 
 
 <div class="col-10 offset-1"
-<h1 class="float-left">Comments</h1>
-<!-- Button trigger modal -->
+
 
 </div>
 
 <div class="clear"></div>
-
+<h2>Comments</h2>
 <div class="row">
 <% @place.comments.each do |comment| %>
   <div class="col-12 col-sm-6">
@@ -136,6 +135,7 @@
   <div class="booyah-box">
     <blockquote>
       <b><%= image_tag photo.picture.to_s %></b>
+      <br />
       <b><%= photo.caption %></b> 
       <small><%= photo.user.email %></small>
     </blockquote>

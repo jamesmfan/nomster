@@ -34,6 +34,10 @@ body {
   font-size: 26px;
 }
 
+.nav-link {
+  color: #802B80 !important;
+}
+
 .invalid-feedback {
   color: #ff3333;
   background-color: #FFEEEE;
@@ -69,3 +73,17 @@ blockquote:before {
 blockquote p {
   display: inline;
 }
+
+.btn-primary.custom-btn {
+  background-color: #6591a8;
+  border-color: #6591a8;
+}
+
+h1{
+  a{
+    color: #6591a8 !important;
+    &:hover{ color: #8b008b !important;}
+    text-decoration: none !important;
+  }
+}
+
