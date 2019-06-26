@@ -107,3 +107,12 @@ h1{
 .carousel {
   box-shadow: 0px 3px 8px #2a2a2a;
 }
+
+.text-left {
+  padding-left: 8px;
+  a{
+    color: #6591a8 !important;
+    &:hover{ color: #8b008b !important;}
+    text-decoration: none !important;
+  }
+}
