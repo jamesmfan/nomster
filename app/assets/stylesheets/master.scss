@@ -94,7 +94,7 @@ h1{
 }
 
 .carousel-caption {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Lato', sans-serif;
   font-size: 60px;
   font-weight: 50;
   text-shadow: rgba(0, 0, 0, 0.95) 2px 2px;
@@ -115,4 +115,27 @@ h1{
     &:hover{ color: #8b008b !important;}
     text-decoration: none !important;
   }
+}
+
+h1.place-name {
+  color: #284a70 !important;
+}
+
+h2.comments-place {
+  color: #284a70 !important;
+}
+
+b.place-photo {
+  width: 200px !important;
+  object-fit: cover;
+}
+
+i.place-address {
+  color: #ae905e !important;
+}
+
+.index-image-size {
+  max-width: 400px !important;
+  max-height: 200px !important;
+  object-fit: cover !important;
 }
